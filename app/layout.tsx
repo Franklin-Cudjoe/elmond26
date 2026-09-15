@@ -5,21 +5,18 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://nana-akua-wedding-invitation.young-fig-4040.chatgpt.site",
   ),
-  title: "Nana & Akua Wedding Invitation",
-  description:
-    "Wedding invitation, timeline, details, directions, and RSVP for Nana and Akua.",
+  title: "Richmond & Elizabeth Save The Date",
+  description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
   openGraph: {
-    title: "Nana & Akua Wedding Invitation",
-    description:
-      "Wedding invitation, timeline, details, directions, and RSVP for Nana and Akua.",
+    title: "Richmond & Elizabeth Save The Date",
+    description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
     url: "/",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Nana & Akua Wedding Invitation",
-    description:
-      "Wedding invitation, timeline, details, directions, and RSVP for Nana and Akua.",
+    title: "Richmond & Elizabeth Save The Date",
+    description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
   },
   icons: {
     icon: "/favicon.svg",
