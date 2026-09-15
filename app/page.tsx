@@ -20,33 +20,6 @@ const ceremonyFacts = [
   },
 ];
 
-const timelineEvents = [
-  {
-    side: "left",
-    icon: "/assets/icon-rings.png",
-    time: "9:30 AM",
-    title: "CEREMONY",
-  },
-  {
-    side: "right",
-    icon: "/assets/icon-camera.png",
-    time: "11:30 AM",
-    title: "PHOTOS",
-  },
-  {
-    side: "left",
-    icon: "/assets/icon-glasses.png",
-    time: "12:00 NOON",
-    title: "COCKTAILS SESSION",
-  },
-  {
-    side: "right",
-    icon: "/assets/icon-couple.png",
-    time: "12:30 PM",
-    title: "COUPLE SEND OFF",
-  },
-];
-
 const monogramTiles = Array.from({ length: 21 });
 
 export default function Home() {
@@ -109,35 +82,29 @@ export default function Home() {
         <p className="cocktail">Cocktail to Follow</p>
       </section>
 
-      <section className="sheet framed timeline" aria-label="Wedding timeline">
-        <img className="flowers flowers-top" src="/assets/flowers-top-left.png" alt="" />
+      <section className="sheet timeline timeline-pdf" aria-label="Wedding timeline">
         <img
-          className="flowers flowers-bottom"
-          src="/assets/flowers-bottom-right.png"
-          alt=""
+          className="timeline-page-art"
+          src="/assets/wedding-timeline-page.png"
+          alt="Wedding Timeline: ceremony at 9:30 AM, photos at 11:30 AM, cocktails session at 12:00 noon, and couple send off at 12:30 PM."
         />
-        <h2>Wedding Timeline</h2>
-        <p>
-          Kindly take note of the sequence of events for our wedding day as we
-          celebrate this special occasion with you.
-        </p>
-        <p>
-          We have thoughtfully arranged each moment to make the day meaningful
-          and memorable, and we hope this guide will help you follow along as
-          our celebration unfolds.
-        </p>
-
-        <div className="timeline-list">
-          <span className="timeline-line" aria-hidden="true" />
-          {timelineEvents.map((event) => (
-            <article className={`timeline-event ${event.side}`} key={event.title}>
-              <span className="timeline-dot" aria-hidden="true" />
-              <img src={event.icon} alt="" aria-hidden="true" />
-              <time>{event.time}</time>
-              <Divider />
-              <h3>{event.title}</h3>
-            </article>
-          ))}
+        <div className="sr-only">
+          <h2>Wedding Timeline</h2>
+          <p>
+            Kindly take note of the sequence of events for our wedding day as we
+            celebrate this special occasion with you.
+          </p>
+          <p>
+            We have thoughtfully arranged each moment to make the day meaningful
+            and memorable, and we hope this guide will help you follow along as
+            our celebration unfolds.
+          </p>
+          <ol>
+            <li>9:30 AM - Ceremony</li>
+            <li>11:30 AM - Photos</li>
+            <li>12:00 Noon - Cocktails Session</li>
+            <li>12:30 PM - Couple Send Off</li>
+          </ol>
         </div>
       </section>
 

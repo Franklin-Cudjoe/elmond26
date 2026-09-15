@@ -35,6 +35,7 @@ test("server-renders the wedding invitation", async () => {
   assert.match(html, /29TH AUGUST, 2026/);
   assert.match(html, /BUOHO - SASA/);
   assert.match(html, /Wedding Timeline/);
+  assert.match(html, /wedding-timeline-page\.png/);
   assert.match(html, /Wedding Details/);
   assert.match(html, /https:\/\/maps\.app\.goo\.gl\/s3dvS83ZXdKUNdkA8/);
   assert.match(html, /https:\/\/docs\.google\.com\/forms\/d\/e\//);
@@ -49,6 +50,7 @@ test("keeps source assets and starter preview out of the page", async () => {
   ]);
 
   assert.match(page, /monogram-cover\.png/);
+  assert.match(page, /wedding-timeline-page\.png/);
   assert.match(page, /qr-momo\.png/);
   assert.match(page, /direction-badge\.png/);
   assert.match(layout, /Nana & Akua Wedding Invitation/);
@@ -56,6 +58,7 @@ test("keeps source assets and starter preview out of the page", async () => {
 
   await Promise.all([
     access(new URL("../public/assets/monogram-cover.png", import.meta.url)),
+    access(new URL("../public/assets/wedding-timeline-page.png", import.meta.url)),
     access(new URL("../public/assets/qr-momo.png", import.meta.url)),
     access(new URL("../public/assets/direction-badge.png", import.meta.url)),
     access(new URL("../public/assets/tap-rsvp.png", import.meta.url)),

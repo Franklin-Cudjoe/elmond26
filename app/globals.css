@@ -289,6 +289,27 @@ img {
   line-height: 1;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  clip-path: inset(50%);
+}
+
+.timeline-pdf {
+  min-height: auto;
+  padding: 0;
+  background: var(--cream);
+}
+
+.timeline-page-art {
+  width: 100%;
+  height: auto;
+}
+
 .framed {
   min-height: 58rem;
   padding: 5.2rem 4.4rem 4.3rem;
@@ -629,6 +650,11 @@ img {
     min-height: 100vh;
     padding: 3rem 1.25rem;
     box-shadow: none;
+  }
+
+  .timeline-pdf {
+    min-height: auto;
+    padding: 0;
   }
 
   .cover-lockup {
