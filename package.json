@@ -6,7 +6,7 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "vinext dev",
+    "dev": "npm run build && vinext start",
     "build": "vinext build",
     "start": "vinext start"
   },
