@@ -6,9 +6,10 @@
     "node": ">=22.13.0"
   },
   "scripts": {
-    "dev": "npm run build && vinext start",
-    "build": "vinext build",
-    "start": "vinext start"
+    "dev": "node preview.mjs",
+    "start": "node preview.mjs",
+    "preview": "node preview.mjs",
+    "build": "vinext build"
   },
   "dependencies": {
     "react": "19.2.6",
