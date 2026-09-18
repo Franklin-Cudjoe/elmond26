@@ -5,18 +5,21 @@ export const metadata: Metadata = {
   metadataBase: new URL(
     "https://nana-akua-wedding-invitation.young-fig-4040.chatgpt.site",
   ),
-  title: "Richmond & Elizabeth Save The Date",
-  description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
+  title: "Nana & Akua Wedding Invitation",
+  description:
+    "Traditional marriage ceremony invitation for Nana and Akua on 29th August, 2026 in Buoho - Sasa.",
   openGraph: {
-    title: "Richmond & Elizabeth Save The Date",
-    description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
+    title: "Nana & Akua Wedding Invitation",
+    description:
+      "Traditional marriage ceremony invitation for Nana and Akua on 29th August, 2026 in Buoho - Sasa.",
     url: "/",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "Richmond & Elizabeth Save The Date",
-    description: "Save the date for Richmond and Elizabeth on 17 / 10 / 26 at Mim Catholic Church.",
+    title: "Nana & Akua Wedding Invitation",
+    description:
+      "Traditional marriage ceremony invitation for Nana and Akua on 29th August, 2026 in Buoho - Sasa.",
   },
   icons: {
     icon: "/favicon.svg",

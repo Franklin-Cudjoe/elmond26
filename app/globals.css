@@ -1,9 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --ink: #062341;
-  --paper: #eef1f5;
-  --shadow: rgba(3, 18, 34, 0.2);
+  --page-bg: #eee9e2;
+  --focus: #c6512c;
 }
 
 * {
@@ -11,244 +10,92 @@
 }
 
 html {
-  background: #d9dde4;
+  background: var(--page-bg);
 }
 
 body {
   min-height: 100vh;
   margin: 0;
-  background:
-    radial-gradient(circle at 25% 18%, rgba(255, 255, 255, 0.55), transparent 24rem),
-    linear-gradient(90deg, #cfd4dc, #f8f9fb 18%, #d7dce4 34%, #f4f6f8 52%, #ccd2db 72%, #f8f9fb);
-  color: var(--ink);
+  background: var(--page-bg);
+  color: #111827;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.page-shell {
+.invitation-shell {
   display: grid;
   min-height: 100vh;
-  padding: 1.25rem;
   place-items: center;
+  padding: clamp(0rem, 2.5vw, 2rem);
 }
 
-.save-card {
+.invitation-pages {
+  display: grid;
+  width: min(100%, 45rem);
+  gap: clamp(0.75rem, 2.5vw, 1.5rem);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.invitation-page {
   position: relative;
-  width: min(100%, 35rem);
-  aspect-ratio: 891 / 1280;
+  width: 100%;
+  aspect-ratio: 5 / 7;
   overflow: hidden;
-  background:
-    linear-gradient(90deg, rgba(10, 35, 65, 0.08), transparent 10%, rgba(255, 255, 255, 0.62) 18%, transparent 27%),
-    linear-gradient(90deg, transparent, rgba(6, 35, 65, 0.09) 38%, rgba(255, 255, 255, 0.7) 46%, transparent 58%),
-    linear-gradient(90deg, #dce0e7, #f7f8fa 19%, #d6dbe3 36%, #f7f8fa 54%, #d0d6df 75%, #f4f6f8);
-  box-shadow: 0 1.5rem 4rem var(--shadow);
-  isolation: isolate;
+  background: #fff;
 }
 
-.save-card::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    repeating-linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.14) 0 2rem,
-      rgba(6, 35, 65, 0.06) 2rem 2.35rem,
-      transparent 2.35rem 4.7rem
-    );
-  mix-blend-mode: multiply;
-  opacity: 0.68;
-}
-
-.floral-mark {
-  position: absolute;
-  top: 3.8%;
-  right: 5.5%;
-  width: 38%;
-  aspect-ratio: 1;
-  border: 2px solid #111;
-  border-radius: 50%;
-}
-
-.floral-mark p {
-  position: absolute;
-  top: 27%;
-  left: 30%;
-  margin: 0;
-  color: #0a0a0a;
-  font-family: "Segoe Script", "Brush Script MT", cursive;
-  font-size: clamp(1.8rem, 7vw, 3.25rem);
-  line-height: 0.78;
-}
-
-.floral-mark small {
-  display: inline-block;
-  margin-left: 0.18em;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 0.3em;
-}
-
-.floral-mark span:not(.sprig) {
+.invitation-page img {
   display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.sprig {
+.page-link {
   position: absolute;
-  width: 36%;
-  height: 44%;
-  border-left: 2px solid #111;
+  display: block;
+  border-radius: 999px;
 }
 
-.sprig::before,
-.sprig::after {
-  content: "";
+.page-link:focus-visible {
+  outline: 0.22rem solid var(--focus);
+  outline-offset: 0.18rem;
+}
+
+.page-link-directions {
+  left: 30.67%;
+  top: 35.97%;
+  width: 40.39%;
+  height: 28.71%;
+}
+
+.page-link-rsvp {
+  left: 38.86%;
+  top: 70.36%;
+  width: 20.39%;
+  height: 14.01%;
+}
+
+.sr-only {
   position: absolute;
-  width: 0.65rem;
-  height: 1.55rem;
-  border-radius: 999px 999px 0 999px;
-  background: #111;
-}
-
-.sprig-top {
-  top: -7%;
-  left: 10%;
-  transform: rotate(24deg);
-}
-
-.sprig-bottom {
-  right: -5%;
-  bottom: 5%;
-  transform: rotate(-42deg);
-}
-
-.sprig-top::before {
-  top: 5%;
-  left: -0.85rem;
-  transform: rotate(-32deg);
-}
-
-.sprig-top::after {
-  top: 20%;
-  left: 0.55rem;
-  transform: rotate(48deg);
-}
-
-.sprig-bottom::before {
-  top: 10%;
-  left: -0.7rem;
-  transform: rotate(-26deg);
-}
-
-.sprig-bottom::after {
-  top: 28%;
-  left: 0.52rem;
-  transform: rotate(42deg);
-}
-
-.couple-frame {
-  position: absolute;
-  inset: 25% 4% 14%;
-  z-index: -1;
-}
-
-.portrait {
-  position: absolute;
-  bottom: 5%;
-  background: #f5f8fb;
-  filter: drop-shadow(0 1.1rem 1rem rgba(3, 18, 34, 0.12));
-}
-
-.portrait.bride {
-  left: 5%;
-  width: 52%;
-  height: 58%;
-  border-radius: 48% 48% 8% 8%;
-}
-
-.portrait.bride::before {
-  content: "";
-  position: absolute;
-  top: -19%;
-  left: 27%;
-  width: 36%;
-  height: 28%;
-  border-radius: 50%;
-  background: #1d1513;
-}
-
-.portrait.groom {
-  right: 0;
-  width: 70%;
-  height: 72%;
-  border-radius: 44% 42% 6% 6%;
-}
-
-.portrait.groom::before {
-  content: "";
-  position: absolute;
-  top: -16%;
-  left: 32%;
-  width: 34%;
-  height: 26%;
-  border-radius: 48%;
-  background: #111;
-}
-
-.embrace {
-  position: absolute;
-  right: 14%;
-  bottom: 13%;
-  width: 58%;
-  height: 9%;
-  border-bottom: 0.6rem solid rgba(171, 112, 92, 0.65);
-  border-radius: 50%;
-  transform: rotate(-8deg);
-}
-
-.card-copy {
-  position: absolute;
-  right: 13%;
-  bottom: 12.5%;
-  display: grid;
-  justify-items: center;
-  width: 65%;
-  text-align: center;
-}
-
-.names {
-  display: grid;
-  gap: 0.2rem;
-  margin: 0;
-  font-family: "Segoe Script", "Brush Script MT", cursive;
-  font-size: clamp(2rem, 7.5vw, 4.15rem);
-  line-height: 0.9;
-}
-
-.names span {
-  font-size: 0.62em;
-  line-height: 1;
-}
-
-time {
-  margin-top: 2.6rem;
-  font-size: clamp(2.4rem, 9vw, 4.4rem);
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 1;
-}
-
-.venue {
-  margin: 0.65rem 0 0;
-  font-size: clamp(1.2rem, 4vw, 1.85rem);
-  line-height: 1.15;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (max-width: 560px) {
-  .page-shell {
+  .invitation-shell {
     padding: 0;
   }
 
-  .save-card {
+  .invitation-pages {
     width: 100%;
-    box-shadow: none;
+    gap: 0;
   }
 }
