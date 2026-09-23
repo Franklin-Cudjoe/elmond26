@@ -7,19 +7,19 @@ export const metadata: Metadata = {
   ),
   title: "Richmond & Elizabeth Wedding Invitation",
   description:
-    "Traditional marriage ceremony invitation for Richmond and Elizabeth on 29th August, 2026 in Buoho - Sasa.",
+    "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
   openGraph: {
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 29th August, 2026 in Buoho - Sasa.",
+      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
     url: "/",
     type: "website",
     images: [
       {
-        url: "/invitation/page-1-elmond6.png",
+        url: "/invitation/page-1-17-october-2026.png",
         width: 1060,
         height: 1484,
-        alt: "Richmond and Elizabeth save the date, 29th August 2026",
+        alt: "Richmond and Elizabeth save the date, 17th October 2026",
       },
     ],
   },
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 29th August, 2026 in Buoho - Sasa.",
-    images: ["/invitation/page-1-elmond6.png"],
+      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
+    images: ["/invitation/page-1-17-october-2026.png"],
   },
   icons: {
     icon: "/invitation/direction.png",
