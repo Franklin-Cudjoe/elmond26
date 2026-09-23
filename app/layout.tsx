@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/invitation/page-1-richmond-elizabeth.png",
+        url: "/invitation/page-1-elmond6.png",
         width: 1060,
         height: 1484,
         alt: "Richmond and Elizabeth save the date, 29th August 2026",
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
       "Traditional marriage ceremony invitation for Richmond and Elizabeth on 29th August, 2026 in Buoho - Sasa.",
-    images: ["/invitation/page-1-richmond-elizabeth.png"],
+    images: ["/invitation/page-1-elmond6.png"],
   },
   icons: {
     icon: "/invitation/direction.png",
