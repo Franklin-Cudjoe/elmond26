@@ -7,11 +7,11 @@ export const metadata: Metadata = {
   ),
   title: "Richmond & Elizabeth Wedding Invitation",
   description:
-    "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
+    "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
   openGraph: {
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
+      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
     url: "/",
     type: "website",
     images: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 in Buoho - Sasa.",
+      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
     images: ["/invitation/page-1-17-october-2026.png"],
   },
   icons: {
