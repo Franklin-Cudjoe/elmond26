@@ -5,19 +5,19 @@ const rsvpUrl =
 const pages = [
   {
     number: 1,
-    src: "/invitation/page-1.jpg",
-    width: 1500,
-    height: 2100,
+    src: "/invitation/page-1-richmond-elizabeth.png",
+    width: 1060,
+    height: 1484,
     className: "art-page-1",
-    alt: "Save the date for Nana and Akua, 29th August 2026, with the hashtag theaddoopokus.",
+    alt: "Save the date for Richmond and Elizabeth, 29th August 2026, with the hashtag theaddoopokus.",
   },
   {
     number: 2,
-    src: "/invitation/page-2.jpg",
+    src: "/invitation/page-2-richmond-elizabeth.png",
     width: 1060,
     height: 1484,
     className: "art-page-2",
-    alt: "Traditional marriage ceremony invitation for Nana and Akua on 29th August 2026 at 9:30 AM in Buoho - Sasa.",
+    alt: "Traditional marriage ceremony invitation for Richmond and Elizabeth on 29th August 2026 at 9:30 AM in Buoho - Sasa.",
   },
   {
     number: 3,
@@ -39,7 +39,10 @@ const pages = [
 
 export default function Home() {
   return (
-    <main className="invitation" aria-label="Nana and Akua wedding invitation">
+    <main
+      className="invitation"
+      aria-label="Richmond and Elizabeth wedding invitation"
+    >
       <ol className="invitation-pages">
         {pages.map((page, index) => (
           <li className="invitation-page" key={page.number}>
@@ -102,12 +105,12 @@ export default function Home() {
       </ol>
 
       <section className="sr-only" aria-label="Invitation details">
-        <h1>Nana and Akua</h1>
+        <h1>Richmond and Elizabeth</h1>
         <p>#theaddoopokus. Save the Date. 29th August, 2026.</p>
         <p>
-          Together with their families, Nana and Akua joyfully invite you to
-          their traditional marriage ceremony on 29th August, 2026 at 9:30 AM
-          in Buoho - Sasa. Cocktail to follow.
+          Together with their families, Richmond and Elizabeth joyfully invite
+          you to their traditional marriage ceremony on 29th August, 2026 at
+          9:30 AM in Buoho - Sasa. Cocktail to follow.
         </p>
         <p>
           RSVP: Silas - 0201997931; Stephanie - 0559819574; Maka - 0243919166;
