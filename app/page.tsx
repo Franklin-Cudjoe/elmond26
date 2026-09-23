@@ -1,7 +1,7 @@
 const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Mim%20Catholic%20Church%2C%20Mim%2C%20Ghana";
 const rsvpUrl =
-  "https://docs.google.com/forms/d/e/1FAIpQLSfTeDEtJewRPhEcVbnzaJTZXL3bOfTauw6PZ9txJt4Faed79A/viewform?usp=publish-editor";
+  "https://docs.google.com/forms/d/e/1FAIpQLScUNxIDZquQlce14dAyr9qOYF_0Ab5elU5GrCd6NQUgYIcYgA/viewform?usp=dialog";
 
 const pages = [
   {
@@ -14,7 +14,7 @@ const pages = [
   },
   {
     number: 2,
-    src: "/invitation/page-2-mim-catholic-church.png",
+    src: "/invitation/page-2-no-rsvp.png",
     width: 1060,
     height: 1484,
     className: "art-page-2",
@@ -112,10 +112,6 @@ export default function Home() {
           Together with their families, Richmond and Elizabeth joyfully invite
           you to their traditional marriage ceremony on 17th October, 2026 at
           9:30 AM at Mim Catholic Church. Cocktail to follow.
-        </p>
-        <p>
-          RSVP: Silas - 0201997931; Stephanie - 0559819574; Maka - 0243919166;
-          Kate - 0209447326.
         </p>
         <h2>Wedding Timeline</h2>
         <p>
