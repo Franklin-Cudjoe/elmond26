@@ -6,11 +6,11 @@ const rsvpUrl =
 const pages = [
   {
     number: 1,
-    src: "/invitation/page-1-17-october-2026.png",
+    src: "/invitation/page-1-elmond26.png",
     width: 1060,
     height: 1484,
     className: "art-page-1",
-    alt: "Save the date for Richmond and Elizabeth, 17th October 2026, with the hashtag Elmond6.",
+    alt: "Save the date for Richmond and Elizabeth, 17th October 2026, with the hashtag Elmond26.",
   },
   {
     number: 2,
@@ -30,11 +30,11 @@ const pages = [
   },
   {
     number: 4,
-    src: "/invitation/page-4-elmond6.png",
+    src: "/invitation/page-4-elmond26.png",
     width: 1060,
     height: 1484,
     className: "art-page-4",
-    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP information, and the hashtag Elmond6.",
+    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP information, and the hashtag Elmond26.",
   },
 ] as const;
 
@@ -107,7 +107,7 @@ export default function Home() {
 
       <section className="sr-only" aria-label="Invitation details">
         <h1>Richmond and Elizabeth</h1>
-        <p>#Elmond6. Save the Date. 17th October, 2026.</p>
+        <p>#Elmond26. Save the Date. 17th October, 2026.</p>
         <p>
           Together with their families, Richmond and Elizabeth joyfully invite
           you to their traditional marriage ceremony on 17th October, 2026 at
