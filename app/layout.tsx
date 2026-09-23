@@ -14,16 +14,25 @@ export const metadata: Metadata = {
       "Traditional marriage ceremony invitation for Nana and Akua on 29th August, 2026 in Buoho - Sasa.",
     url: "/",
     type: "website",
+    images: [
+      {
+        url: "/invitation/page-1.jpg",
+        width: 1500,
+        height: 2100,
+        alt: "Nana and Akua save the date, 29th August 2026",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Nana & Akua Wedding Invitation",
     description:
       "Traditional marriage ceremony invitation for Nana and Akua on 29th August, 2026 in Buoho - Sasa.",
+    images: ["/invitation/page-1.jpg"],
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
+    icon: "/invitation/direction.png",
+    shortcut: "/invitation/direction.png",
   },
 };
 

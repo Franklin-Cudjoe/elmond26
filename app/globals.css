@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --page-bg: #eee9e2;
-  --focus: #c6512c;
+  --surround: #e8e4de;
+  --focus: #d64b21;
 }
 
 * {
@@ -10,30 +10,28 @@
 }
 
 html {
-  background: var(--page-bg);
+  background: var(--surround);
 }
 
 body {
+  min-width: 320px;
   min-height: 100vh;
   margin: 0;
-  background: var(--page-bg);
-  color: #111827;
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--surround);
+  color: #07152f;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
-.invitation-shell {
-  display: grid;
+.invitation {
   min-height: 100vh;
-  place-items: center;
-  padding: clamp(0rem, 2.5vw, 2rem);
 }
 
 .invitation-pages {
   display: grid;
   width: min(100%, 45rem);
-  gap: clamp(0.75rem, 2.5vw, 1.5rem);
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 1.5rem 0;
+  gap: 1.5rem;
   list-style: none;
 }
 
@@ -43,38 +41,82 @@ body {
   aspect-ratio: 5 / 7;
   overflow: hidden;
   background: #fff;
+  box-shadow: 0 0.75rem 2.5rem rgb(22 27 38 / 14%);
 }
 
-.invitation-page img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.page-link {
+.page-art {
   position: absolute;
   display: block;
-  border-radius: 999px;
+  max-width: none;
 }
 
-.page-link:focus-visible {
-  outline: 0.22rem solid var(--focus);
-  outline-offset: 0.18rem;
+.art-page-1 {
+  top: 0;
+  left: 0.305556%;
+  width: 100.472222%;
+  height: 100.555556%;
 }
 
-.page-link-directions {
-  left: 30.67%;
-  top: 35.97%;
-  width: 40.39%;
-  height: 28.71%;
+.art-page-2,
+.art-page-5 {
+  top: 0.019841%;
+  left: 0;
+  width: 100%;
+  height: 99.980159%;
 }
 
-.page-link-rsvp {
-  left: 38.86%;
-  top: 70.36%;
-  width: 20.39%;
-  height: 14.01%;
+.art-page-3 {
+  top: 0.059524%;
+  left: -0.444444%;
+  width: 99.916667%;
+  height: 99.880952%;
+}
+
+.art-page-4 {
+  top: 0.119048%;
+  left: 0.083333%;
+  width: 99.916667%;
+  height: 99.880952%;
+}
+
+.direction-art {
+  top: 35.972222%;
+  left: 30.861111%;
+  width: 40%;
+  height: 28.710317%;
+}
+
+.rsvp-art {
+  top: 70.357143%;
+  left: 39.055556%;
+  width: 20%;
+  height: 14.007937%;
+}
+
+.pdf-link {
+  position: absolute;
+  z-index: 1;
+  display: block;
+}
+
+.pdf-link:focus-visible {
+  border-radius: 0.25rem;
+  outline: 0.2rem solid var(--focus);
+  outline-offset: 0.16rem;
+}
+
+.directions-link {
+  top: 35.97222%;
+  left: 30.666667%;
+  width: 40.388889%;
+  height: 28.71032%;
+}
+
+.rsvp-link {
+  top: 70.357144%;
+  left: 38.861111%;
+  width: 20.388889%;
+  height: 14.007936%;
 }
 
 .sr-only {
@@ -90,12 +132,31 @@ body {
 }
 
 @media (max-width: 560px) {
-  .invitation-shell {
+  .invitation-pages {
+    width: 100%;
     padding: 0;
+    gap: 0;
+  }
+
+  .invitation-page {
+    box-shadow: none;
+  }
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
   }
 
   .invitation-pages {
     width: 100%;
+    padding: 0;
     gap: 0;
+  }
+
+  .invitation-page {
+    break-after: page;
+    box-shadow: none;
   }
 }
