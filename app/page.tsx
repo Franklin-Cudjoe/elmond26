@@ -6,27 +6,27 @@ const rsvpUrl =
 const pages = [
   {
     number: 1,
-    src: "/invitation/page-1-elmond26.png",
+    src: "/invitation/page-1-16-october-2026.png",
     width: 1060,
     height: 1484,
     className: "art-page-1",
-    alt: "Save the date for Richmond and Elizabeth, 17th October 2026, with the hashtag Elmond26.",
+    alt: "Save the date for Richmond and Elizabeth, 16th October 2026, with the hashtag Elmond26.",
   },
   {
     number: 2,
-    src: "/invitation/richmond-elizabeth-photo.jpeg",
-    width: 892,
-    height: 1280,
+    src: "/invitation/richmond-elizabeth-photo-16-october-2026.png",
+    width: 1047,
+    height: 1502,
     className: "art-couple-photo",
-    alt: "Richmond and Elizabeth embracing in their save-the-date portrait, announcing 17th October 2026 at Mim Catholic Church.",
+    alt: "Richmond and Elizabeth embracing in their save-the-date portrait, announcing 16th October 2026 at Mim Catholic Church.",
   },
   {
     number: 3,
-    src: "/invitation/page-2-no-rsvp.png",
+    src: "/invitation/page-2-16-october-2026.png",
     width: 1060,
     height: 1484,
     className: "art-page-2",
-    alt: "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October 2026 at 9:30 AM at Mim Catholic Church.",
+    alt: "Traditional marriage ceremony invitation for Richmond and Elizabeth on 16th October 2026 at 9:30 AM at Mim Catholic Church.",
   },
   {
     number: 4,
@@ -38,11 +38,11 @@ const pages = [
   },
   {
     number: 5,
-    src: "/invitation/page-4-rsvp-17-october-2026.png",
+    src: "/invitation/page-4-rsvp-16-october-2026.png",
     width: 1060,
     height: 1484,
     className: "art-page-4",
-    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP by 17th October 2026, and the hashtag Elmond26.",
+    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP by 16th October 2026, and the hashtag Elmond26.",
   },
 ] as const;
 
@@ -84,7 +84,7 @@ export default function Home() {
           />
           <img
             className="page-art direction-art"
-            src="/invitation/direction-elmond26.png"
+            src="/invitation/direction-16-october-2026.png"
             width="1254"
             height="1254"
             alt=""
@@ -119,10 +119,10 @@ export default function Home() {
 
       <section className="sr-only" aria-label="Invitation details">
         <h1>Richmond and Elizabeth</h1>
-        <p>#Elmond26. Save the Date. 17th October, 2026.</p>
+        <p>#Elmond26. Save the Date. 16th October, 2026.</p>
         <p>
           Together with their families, Richmond and Elizabeth joyfully invite
-          you to their traditional marriage ceremony on 17th October, 2026 at
+          you to their traditional marriage ceremony on 16th October, 2026 at
           9:30 AM at Mim Catholic Church. Cocktail to follow.
         </p>
         <h2>Wedding Timeline</h2>
@@ -134,7 +134,7 @@ export default function Home() {
         <p>
           The celebration is adults only. Guests are kindly asked to put away
           cameras during the unplugged ceremony. Each invitation admits one
-          named guest and is non-transferable. Kindly RSVP by 17th October 2026.
+          named guest and is non-transferable. Kindly RSVP by 16th October 2026.
         </p>
       </section>
     </main>
