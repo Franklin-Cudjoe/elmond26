@@ -31,8 +31,8 @@ export const metadata: Metadata = {
     images: ["/invitation/richmond-elizabeth-photo.jpeg"],
   },
   icons: {
-    icon: "/invitation/direction.png",
-    shortcut: "/invitation/direction.png",
+    icon: "/invitation/direction-elmond26.png",
+    shortcut: "/invitation/direction-elmond26.png",
   },
 };
 

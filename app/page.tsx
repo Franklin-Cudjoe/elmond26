@@ -84,9 +84,9 @@ export default function Home() {
           />
           <img
             className="page-art direction-art"
-            src="/invitation/direction.png"
-            width="592"
-            height="595"
+            src="/invitation/direction-elmond26.png"
+            width="1254"
+            height="1254"
             alt=""
             loading="lazy"
             decoding="async"
