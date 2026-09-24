@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/invitation/page-1-17-october-2026.png",
-        width: 1060,
-        height: 1484,
-        alt: "Richmond and Elizabeth save the date, 17th October 2026",
+        url: "/invitation/richmond-elizabeth-photo.jpeg",
+        width: 892,
+        height: 1280,
+        alt: "Richmond and Elizabeth save-the-date portrait, 17th October 2026",
       },
     ],
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
       "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
-    images: ["/invitation/page-1-17-october-2026.png"],
+    images: ["/invitation/richmond-elizabeth-photo.jpeg"],
   },
   icons: {
     icon: "/invitation/direction.png",

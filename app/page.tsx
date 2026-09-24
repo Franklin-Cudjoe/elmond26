@@ -14,6 +14,14 @@ const pages = [
   },
   {
     number: 2,
+    src: "/invitation/richmond-elizabeth-photo.jpeg",
+    width: 892,
+    height: 1280,
+    className: "art-couple-photo",
+    alt: "Richmond and Elizabeth embracing in their save-the-date portrait, announcing 17th October 2026 at Mim Catholic Church.",
+  },
+  {
+    number: 3,
     src: "/invitation/page-2-no-rsvp.png",
     width: 1060,
     height: 1484,
@@ -21,7 +29,7 @@ const pages = [
     alt: "Traditional marriage ceremony invitation for Richmond and Elizabeth on 17th October 2026 at 9:30 AM at Mim Catholic Church.",
   },
   {
-    number: 3,
+    number: 4,
     src: "/invitation/page-3.jpg",
     width: 1429,
     height: 2000,
@@ -29,7 +37,7 @@ const pages = [
     alt: "Wedding timeline: ceremony at 9:30 AM, photos at 11:30 AM, cocktails at noon, and couple send off at 12:30 PM.",
   },
   {
-    number: 4,
+    number: 5,
     src: "/invitation/page-4-rsvp-17-october-2026.png",
     width: 1060,
     height: 1484,
@@ -46,7 +54,11 @@ export default function Home() {
     >
       <ol className="invitation-pages">
         {pages.map((page, index) => (
-          <li className="invitation-page" key={page.number}>
+          <li
+            className="invitation-page"
+            key={page.number}
+            style={{ aspectRatio: `${page.width} / ${page.height}` }}
+          >
             <img
               className={`page-art ${page.className}`}
               src={page.src}
