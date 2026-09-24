@@ -2,6 +2,7 @@ const directionsUrl =
   "https://www.google.com/maps/search/?api=1&query=Mim%20Catholic%20Church%2C%20Mim%2C%20Ghana";
 const rsvpUrl =
   "https://docs.google.com/forms/d/e/1FAIpQLScUNxIDZquQlce14dAyr9qOYF_0Ab5elU5GrCd6NQUgYIcYgA/viewform?usp=dialog";
+const momoNumber = "0548763626";
 
 const pages = [
   {
@@ -55,7 +56,7 @@ export default function Home() {
       <ol className="invitation-pages">
         {pages.map((page, index) => (
           <li
-            className="invitation-page"
+            className={`invitation-page${page.className === "art-page-4" ? " invitation-page-details" : ""}`}
             key={page.number}
             style={{ aspectRatio: `${page.width} / ${page.height}` }}
           >
@@ -69,6 +70,20 @@ export default function Home() {
               decoding={index === 0 ? "sync" : "async"}
               fetchPriority={index === 0 ? "high" : "auto"}
             />
+            {page.className === "art-page-4" && (
+              <>
+                <img
+                  className="momo-qr"
+                  src={`/invitation/momo-${momoNumber}.png`}
+                  width="348"
+                  height="348"
+                  alt={`MoMo QR code for ${momoNumber}`}
+                  loading="lazy"
+                  decoding="async"
+                />
+                <p className="momo-number">{momoNumber}</p>
+              </>
+            )}
           </li>
         ))}
 
@@ -131,6 +146,7 @@ export default function Home() {
           noon, and couple send off at 12:30 PM.
         </p>
         <h2>Wedding Details</h2>
+        <p>MoMo contribution number: {momoNumber}.</p>
         <p>
           The celebration is adults only. Guests are kindly asked to put away
           cameras during the unplugged ceremony. Each invitation admits one

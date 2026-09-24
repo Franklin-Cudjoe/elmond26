@@ -86,6 +86,34 @@ body {
   height: 99.880952%;
 }
 
+.invitation-page-details {
+  container-type: inline-size;
+}
+
+.momo-qr {
+  position: absolute;
+  top: 41.1%;
+  left: 16.15%;
+  width: 29.2%;
+  height: auto;
+  aspect-ratio: 1;
+  background: #fff;
+}
+
+.momo-number {
+  position: absolute;
+  top: 67.2%;
+  left: 16.15%;
+  width: 29.2%;
+  margin: 0;
+  color: #002568;
+  font-size: clamp(12px, 3cqw, 24px);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.25;
+  text-align: center;
+  white-space: nowrap;
+}
+
 .direction-art {
   top: 35.972222%;
   left: 30.861111%;
