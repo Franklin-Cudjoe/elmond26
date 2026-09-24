@@ -30,11 +30,11 @@ const pages = [
   },
   {
     number: 4,
-    src: "/invitation/page-4-elmond26.png",
+    src: "/invitation/page-4-rsvp-17-october-2026.png",
     width: 1060,
     height: 1484,
     className: "art-page-4",
-    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP information, and the hashtag Elmond26.",
+    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP by 17th October 2026, and the hashtag Elmond26.",
   },
 ] as const;
 
@@ -122,7 +122,7 @@ export default function Home() {
         <p>
           The celebration is adults only. Guests are kindly asked to put away
           cameras during the unplugged ceremony. Each invitation admits one
-          named guest and is non-transferable. Kindly RSVP by 22nd August.
+          named guest and is non-transferable. Kindly RSVP by 17th October 2026.
         </p>
       </section>
     </main>
