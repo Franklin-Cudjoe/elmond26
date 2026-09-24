@@ -11,6 +11,12 @@ const localBindingConfig = {
 };
 
 export default defineConfig(async () => {
+  if (process.env.NETLIFY === "true") {
+    return {
+      plugins: [vinext({ nextConfig: { output: "export" } })],
+    };
+  }
+
   // Keep Wrangler and Miniflare state project-local. These are non-secret tool
   // settings; application environment belongs in ignored `.env*` files.
   process.env.WRANGLER_WRITE_LOGS ??= "false";

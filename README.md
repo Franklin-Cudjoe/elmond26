@@ -30,7 +30,37 @@ npm run build
 ```
 
 Build output is written to `dist/`. The existing Sites deployment is configured
-in `.openai/hosting.json`; pushing to GitHub alone does not publish the site.
+in `.openai/hosting.json`; pushing to GitHub does not publish that Sites-hosted
+version. A connected Netlify project can deploy automatically on Git pushes.
+
+## Deploy on Netlify
+
+Import `Franklin-Cudjoe/elmond26` and use the `main` branch. The committed
+`netlify.toml` configures the build automatically:
+
+- Base directory: leave blank (repository root).
+- Package directory: leave blank.
+- Build command: `npm run build`.
+- Publish directory: `dist/client`.
+- Functions directory: leave blank; this invitation needs no functions.
+- Node.js: 22.
+
+Keep active builds enabled. Private build logs are recommended.
+
+When `NETLIFY=true`, the Vite configuration exports static HTML and assets,
+without the Cloudflare or Sites plugins. Netlify's `URL` environment variable
+sets the social-preview origin. The default build still targets the existing
+Sites/Cloudflare deployment.
+
+To test the Netlify build locally in PowerShell:
+
+```powershell
+$env:NETLIFY = "true"
+npm run build
+Remove-Item Env:NETLIFY
+```
+
+The static homepage is generated at `dist/client/index.html`.
 
 ## Project Files
 

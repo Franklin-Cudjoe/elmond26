@@ -3,7 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    "https://richmond-elizabeth-wedding-invitation.young-fig-4040.chatgpt.site",
+    (process.env.NETLIFY === "true" && process.env.URL) ||
+      "https://richmond-elizabeth-wedding-invitation.young-fig-4040.chatgpt.site",
   ),
   title: "Richmond & Elizabeth Wedding Invitation",
   description:
