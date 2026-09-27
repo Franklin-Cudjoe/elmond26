@@ -8,19 +8,19 @@ export const metadata: Metadata = {
   ),
   title: "Richmond & Elizabeth Wedding Invitation",
   description:
-    "Traditional marriage ceremony invitation for Richmond and Elizabeth on 16th October, 2026 at Mim Catholic Church.",
+    "White Wedding invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
   openGraph: {
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 16th October, 2026 at Mim Catholic Church.",
+      "White Wedding invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
     url: "/",
     type: "website",
     images: [
       {
-        url: "/invitation/richmond-elizabeth-photo-16-october-2026.png",
-        width: 1047,
-        height: 1502,
-        alt: "Richmond and Elizabeth save-the-date portrait, 16th October 2026",
+        url: "/invitation/richmond-elizabeth-photo.jpeg",
+        width: 892,
+        height: 1280,
+        alt: "Richmond and Elizabeth save-the-date portrait, 17th October 2026",
       },
     ],
   },
@@ -28,12 +28,12 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Richmond & Elizabeth Wedding Invitation",
     description:
-      "Traditional marriage ceremony invitation for Richmond and Elizabeth on 16th October, 2026 at Mim Catholic Church.",
-    images: ["/invitation/richmond-elizabeth-photo-16-october-2026.png"],
+      "White Wedding invitation for Richmond and Elizabeth on 17th October, 2026 at Mim Catholic Church.",
+    images: ["/invitation/richmond-elizabeth-photo.jpeg"],
   },
   icons: {
-    icon: "/invitation/direction-16-october-2026.png",
-    shortcut: "/invitation/direction-16-october-2026.png",
+    icon: "/invitation/direction-badge-navy-gold.png",
+    shortcut: "/invitation/direction-badge-navy-gold.png",
   },
 };
 

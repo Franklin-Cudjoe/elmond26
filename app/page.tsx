@@ -7,31 +7,31 @@ const momoNumber = "0548763626";
 const pages = [
   {
     number: 1,
-    src: "/invitation/page-1-16-october-2026.png",
+    src: "/invitation/save-the-date-photo.png",
     width: 1060,
     height: 1484,
     className: "art-page-1",
-    alt: "Save the date for Richmond and Elizabeth, 16th October 2026, with the hashtag Elmond26.",
+    alt: "Richmond and Elizabeth dressed in white, leaning into each other, above their monogram with Save the Date, 17th October 2026, and the hashtag Elmond26.",
   },
   {
     number: 2,
-    src: "/invitation/richmond-elizabeth-photo-16-october-2026.png",
-    width: 1047,
-    height: 1502,
+    src: "/invitation/richmond-elizabeth-photo.jpeg",
+    width: 892,
+    height: 1280,
     className: "art-couple-photo",
-    alt: "Richmond and Elizabeth embracing in their save-the-date portrait, announcing 16th October 2026 at Mim Catholic Church.",
+    alt: "Richmond and Elizabeth embracing in their save-the-date portrait, announcing 17th October 2026 at Mim Catholic Church.",
   },
   {
     number: 3,
-    src: "/invitation/page-2-16-october-2026.png",
+    src: "/invitation/white-wedding-navy-gold.png",
     width: 1060,
     height: 1484,
     className: "art-page-2",
-    alt: "Traditional marriage ceremony invitation for Richmond and Elizabeth on 16th October 2026 at 9:30 AM at Mim Catholic Church.",
+    alt: "White Wedding invitation for Richmond and Elizabeth on 17th October 2026 at 9:30 AM at Mim Catholic Church.",
   },
   {
     number: 4,
-    src: "/invitation/page-3.jpg",
+    src: "/invitation/wedding-timeline-navy-gold.jpg",
     width: 1429,
     height: 2000,
     className: "art-page-3",
@@ -39,11 +39,11 @@ const pages = [
   },
   {
     number: 5,
-    src: "/invitation/page-4-rsvp-16-october-2026.png",
+    src: "/invitation/wedding-details-navy-gold.png",
     width: 1060,
     height: 1484,
     className: "art-page-4",
-    alt: "Wedding details covering gifts, an adults-only celebration, an unplugged ceremony, admission, RSVP by 16th October 2026, and the hashtag Elmond26.",
+    alt: "Wedding details covering gift notes with a MoMo QR code, RSVP by 17th October 2026, and the hashtag Elmond26.",
   },
 ] as const;
 
@@ -71,18 +71,15 @@ export default function Home() {
               fetchPriority={index === 0 ? "high" : "auto"}
             />
             {page.className === "art-page-4" && (
-              <>
-                <img
-                  className="momo-qr"
-                  src={`/invitation/momo-${momoNumber}.png`}
-                  width="348"
-                  height="348"
-                  alt={`MoMo QR code for ${momoNumber}`}
-                  loading="lazy"
-                  decoding="async"
-                />
-                <p className="momo-number">{momoNumber}</p>
-              </>
+              <img
+                className="momo-qr"
+                src={`/invitation/momo-${momoNumber}.png`}
+                width="348"
+                height="348"
+                alt="MoMo QR code for gift contributions"
+                loading="lazy"
+                decoding="async"
+              />
             )}
           </li>
         ))}
@@ -90,7 +87,7 @@ export default function Home() {
         <li className="invitation-page invitation-page-links">
           <img
             className="page-art art-page-5"
-            src="/invitation/page-5-background.png"
+            src="/invitation/directions-rsvp-navy-gold.png"
             width="1500"
             height="2100"
             alt="Direction to the program and RSVP."
@@ -99,7 +96,7 @@ export default function Home() {
           />
           <img
             className="page-art direction-art"
-            src="/invitation/direction-16-october-2026.png"
+            src="/invitation/direction-badge-navy-gold.png"
             width="1254"
             height="1254"
             alt=""
@@ -108,7 +105,7 @@ export default function Home() {
           />
           <img
             className="page-art rsvp-art"
-            src="/invitation/rsvp.png"
+            src="/invitation/tap-here-navy.png"
             width="254"
             height="248"
             alt=""
@@ -134,10 +131,10 @@ export default function Home() {
 
       <section className="sr-only" aria-label="Invitation details">
         <h1>Richmond and Elizabeth</h1>
-        <p>#Elmond26. Save the Date. 16th October, 2026.</p>
+        <p>#Elmond26. Save the Date. 17th October, 2026.</p>
         <p>
           Together with their families, Richmond and Elizabeth joyfully invite
-          you to their traditional marriage ceremony on 16th October, 2026 at
+          you to their white wedding on 17th October, 2026 at
           9:30 AM at Mim Catholic Church. Cocktail to follow.
         </p>
         <h2>Wedding Timeline</h2>
@@ -146,11 +143,9 @@ export default function Home() {
           noon, and couple send off at 12:30 PM.
         </p>
         <h2>Wedding Details</h2>
-        <p>MoMo contribution number: {momoNumber}.</p>
         <p>
-          The celebration is adults only. Guests are kindly asked to put away
-          cameras during the unplugged ceremony. Each invitation admits one
-          named guest and is non-transferable. Kindly RSVP by 16th October 2026.
+          Gifts can be sent by scanning the MoMo QR code. Kindly RSVP by 17th
+          October 2026.
         </p>
       </section>
     </main>
