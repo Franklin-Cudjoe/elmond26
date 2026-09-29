@@ -1,6 +1,6 @@
 # Elmond26 Wedding Invitation
 
-Richmond and Elizabeth's **White Wedding** invitation for **17 October 2026**, 9:30 AM,
+Richmond and Elizabeth's **White Wedding** invitation for **17 October 2026**, 10:00 AM,
 at **Mim Catholic Church**. Hashtag: **#Elmond26**.
 
 Built with React, TypeScript, and vinext/Vite. Includes the invitation artwork,

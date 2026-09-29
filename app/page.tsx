@@ -27,7 +27,7 @@ const pages = [
     width: 1060,
     height: 1484,
     className: "art-page-2",
-    alt: "White Wedding invitation for Richmond and Elizabeth on 17th October 2026 at 9:30 AM at Mim Catholic Church.",
+    alt: "White Wedding invitation for Richmond and Elizabeth on 17th October 2026 at 10:00 AM at Mim Catholic Church.",
   },
   {
     number: 4,
@@ -35,7 +35,7 @@ const pages = [
     width: 1429,
     height: 2000,
     className: "art-page-3",
-    alt: "Wedding timeline: ceremony at 9:30 AM, photos at 11:30 AM, cocktails at noon, and couple send off at 12:30 PM.",
+    alt: "Wedding timeline: ceremony at 10:00 AM, photos at 12:00 PM, and reception at 2:00 PM.",
   },
   {
     number: 5,
@@ -135,12 +135,11 @@ export default function Home() {
         <p>
           Together with their families, Richmond and Elizabeth joyfully invite
           you to their white wedding on 17th October, 2026 at
-          9:30 AM at Mim Catholic Church. Cocktail to follow.
+          10:00 AM at Mim Catholic Church. Cocktail to follow.
         </p>
         <h2>Wedding Timeline</h2>
         <p>
-          Ceremony at 9:30 AM, photos at 11:30 AM, cocktails session at 12:00
-          noon, and couple send off at 12:30 PM.
+          Ceremony at 10:00 AM, photos at 12:00 PM, and reception at 2:00 PM.
         </p>
         <h2>Wedding Details</h2>
         <p>
