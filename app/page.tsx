@@ -87,10 +87,10 @@ export default function Home() {
         <li className="invitation-page invitation-page-links">
           <img
             className="page-art art-page-5"
-            src="/invitation/directions-rsvp-navy-gold.png"
+            src="/invitation/directions-rsvp-navy-gold.png?v=2"
             width="1500"
             height="2100"
-            alt="Direction to the program and RSVP."
+            alt="Direction to the program and RSVP. RSVP contacts: Owusu Bofah, 0531829609, and Abrafi, 0531895611."
             loading="lazy"
             decoding="async"
           />
@@ -146,6 +146,8 @@ export default function Home() {
           Gifts can be sent by scanning the MoMo QR code. Kindly RSVP by 17th
           October 2026.
         </p>
+        <h2>RSVP Contacts</h2>
+        <p>Owusu Bofah: 0531829609. Abrafi: 0531895611.</p>
       </section>
     </main>
   );
