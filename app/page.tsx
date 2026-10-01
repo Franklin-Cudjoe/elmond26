@@ -23,7 +23,7 @@ const pages = [
   },
   {
     number: 3,
-    src: "/invitation/white-wedding-navy-gold.png",
+    src: "/invitation/white-wedding-navy-gold.png?v=2",
     width: 1060,
     height: 1484,
     className: "art-page-2",
@@ -31,7 +31,7 @@ const pages = [
   },
   {
     number: 4,
-    src: "/invitation/wedding-timeline-navy-gold.jpg",
+    src: "/invitation/wedding-timeline-navy-gold.jpg?v=2",
     width: 1429,
     height: 2000,
     className: "art-page-3",
@@ -135,7 +135,7 @@ export default function Home() {
         <p>
           Together with their families, Richmond and Elizabeth joyfully invite
           you to their white wedding on 17th October, 2026 at
-          10:00 AM at Mim Catholic Church. Cocktail to follow.
+          10:00 AM at Mim Catholic Church. Reception to follow.
         </p>
         <h2>Wedding Timeline</h2>
         <p>
